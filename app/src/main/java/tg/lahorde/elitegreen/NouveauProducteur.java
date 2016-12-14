@@ -14,13 +14,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+/**
+ * Created by pondikpa on 13/12/16.
+ */
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+public class NouveauProducteur extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.nouveau_producteur);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -108,3 +109,4 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 }
+
