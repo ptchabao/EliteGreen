@@ -19,7 +19,7 @@
             android:icon="@android:drawable/ic_dialog_map"
             android:title="Carte" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/visites"
             android:icon="@android:drawable/ic_menu_my_calendar"
             android:title="Visites" />
     </group>
