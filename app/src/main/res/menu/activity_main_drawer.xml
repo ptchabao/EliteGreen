@@ -11,9 +11,9 @@
             android:icon="@android:drawable/btn_plus"
             android:title="Enregistrer Un Producteur" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/planvisites"
             android:icon="@android:drawable/ic_menu_agenda"
-            android:title="Collecte De Donnees" />
+            android:title="Planing Des Visites" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@android:drawable/ic_dialog_map"

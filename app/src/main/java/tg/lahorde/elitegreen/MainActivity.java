@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this,EnregistrementAape.class);
             intent.putExtra("madonn","AAPE");
             this.startActivityForResult(intent,1000);
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.planvisites) {
 
         } else if (id == R.id.enregistrement_producteur) {
             Intent intent = new Intent(this,EnregistrementProducteur.class);
@@ -98,7 +98,10 @@ public class MainActivity extends AppCompatActivity
             intent.putExtra("madonn","Apropos");
             this.startActivityForResult(intent,1000);
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.planvisites) {
+            Intent intent = new Intent(this,Planing.class);
+            intent.putExtra("madonn","Apropos");
+            this.startActivityForResult(intent,1000);
 
         } else if (id == R.id.nav_send) {
             Intent intent = new Intent(this,About.class);

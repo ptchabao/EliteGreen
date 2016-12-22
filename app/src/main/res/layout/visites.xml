@@ -18,13 +18,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="37dp"
-            android:id="@+id/button6"
+            android:id="@+id/fructification"
             android:textStyle="normal|bold"
             android:textAlignment="center"
             android:textSize="18sp"
             android:layout_marginLeft="355dp"
             android:layout_marginStart="355dp"
-            android:layout_below="@+id/button5"
+            android:layout_below="@+id/floraison"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
@@ -35,39 +35,39 @@
             android:layout_marginLeft="22dp"
             android:layout_marginStart="22dp"
             android:layout_marginTop="104dp"
-            android:id="@+id/button5"
+            android:id="@+id/floraison"
             android:textStyle="normal|bold"
             android:textAlignment="center"
             android:textSize="18sp"
             android:layout_alignParentTop="true"
-            android:layout_alignLeft="@+id/button6"
-            android:layout_alignStart="@+id/button6" />
+            android:layout_alignLeft="@+id/fructification"
+            android:layout_alignStart="@+id/fructification" />
 
         <Button
             android:text="Visite Recolte"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
-            android:id="@+id/button7"
+            android:id="@+id/recolte"
             android:textStyle="normal|bold"
             android:textAlignment="center"
             android:textSize="18sp"
-            android:layout_below="@+id/button6"
-            android:layout_alignRight="@+id/button5"
-            android:layout_alignEnd="@+id/button5" />
+            android:layout_below="@+id/fructification"
+            android:layout_alignRight="@+id/floraison"
+            android:layout_alignEnd="@+id/floraison" />
 
         <Button
             android:text="VISITE FIN RECOLTES ET RENDEMENTS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="38dp"
-            android:id="@+id/button9"
+            android:id="@+id/rendement"
             android:textSize="18sp"
             android:textStyle="normal|bold"
             android:textAlignment="center"
             android:layout_marginLeft="314dp"
             android:layout_marginStart="314dp"
-            android:layout_below="@+id/button7"
+            android:layout_below="@+id/recolte"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 

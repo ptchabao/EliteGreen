@@ -12,32 +12,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 
 /**
- * Created by pondikpa on 21/12/16.
+ * Created by pondikpa on 22/12/16.
  */
 
-public class Visites extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
-    Button florais;
-    Button fructif;
-    Button recolt;
-    Button rend;
+public class Planing extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.visites);
-        //On agit recupere les boutons par leur id
-        florais = ((Button)this.findViewById(R.id.floraison));
-        fructif = ((Button)this.findViewById(R.id.fructification));
-        recolt = ((Button)this.findViewById(R.id.recolte));
-        rend = ((Button)this.findViewById(R.id.rendement));
-        florais.setOnClickListener(this);
-        fructif.setOnClickListener(this);
-        recolt.setOnClickListener(this);
-        rend.setOnClickListener(this);
-
+        setContentView(R.layout.planing);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -120,30 +105,5 @@ public class Visites extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    @Override
-    public void onClick(View v) {
-        if (florais.isPressed() ){
-            Intent intent = new Intent(this,VisiteFloraison.class);
-            intent.putExtra("madonn","AAPE");
-            this.startActivityForResult(intent,1000);
-        }
-        else  if (fructif.isPressed()){
-            Intent intent = new Intent(this,VisiteFructification.class);
-            intent.putExtra("madonn","AAPE");
-            this.startActivityForResult(intent,1000);
-        }
-        else  if (recolt.isPressed()){
-            Intent intent = new Intent(this,VisiteDebutRecoltes.class);
-            intent.putExtra("madonn","AAPE");
-            this.startActivityForResult(intent,1000);
-        }
-        else  if (rend.isPressed()){
-            Intent intent = new Intent(this,VisiteFinRecoltes.class);
-            intent.putExtra("madonn","AAPE");
-            this.startActivityForResult(intent,1000);
-        }
-
     }
 }

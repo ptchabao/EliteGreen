@@ -38,7 +38,7 @@
             android:layout_toEndOf="@+id/imageButton" />
 
         <TextView
-            android:text="Moheme Sandani"
+            android:text="Moyeme Sandani"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView13"
@@ -106,11 +106,47 @@
             android:layout_marginLeft="26dp"
             android:layout_marginStart="26dp" />
 
+        <TextView
+            android:text="Brice Tossim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:id="@+id/textView46"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:layout_below="@+id/textView13"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+
+        <TextView
+            android:text="Adelin Kuevi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView46"
+            android:layout_alignRight="@+id/textView46"
+            android:layout_alignEnd="@+id/textView46"
+            android:layout_marginTop="13dp"
+            android:id="@+id/textView48"
+            android:textStyle="normal|bold"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="Daniel Blandess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:id="@+id/textView49"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:layout_below="@+id/textView48"
+            android:layout_alignRight="@+id/textView13"
+            android:layout_alignEnd="@+id/textView13" />
+
 
     </RelativeLayout>
-
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 </android.support.v4.widget.DrawerLayout>

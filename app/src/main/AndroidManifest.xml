@@ -43,6 +43,42 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="landscape">
         </activity>
+        <activity
+            android:name=".Maux"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".VisiteDebutRecoltes"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".VisiteFinRecoltes"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".VisiteFloraison"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".VisiteFructification"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Planing"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
+        </activity>
     </application>
 
 </manifest>
