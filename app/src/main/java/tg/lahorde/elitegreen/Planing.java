@@ -94,9 +94,18 @@ public class Planing extends AppCompatActivity implements NavigationView.OnNavig
             intent.putExtra("madonn","Apropos");
             this.startActivityForResult(intent,1000);
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.planvisites) {
+            Intent intent = new Intent(this,Planing.class);
+            intent.putExtra("madonn","Apropos");
+            this.startActivityForResult(intent,1000);
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.menumap) {
+            Intent intent = new Intent(this,Map.class);
+            intent.putExtra("madonn","Apropos");
+            this.startActivityForResult(intent,1000);
+
+        }
+        else if (id == R.id.apropos) {
             Intent intent = new Intent(this,About.class);
             intent.putExtra("madonn","Apropos");
             this.startActivityForResult(intent,1000);

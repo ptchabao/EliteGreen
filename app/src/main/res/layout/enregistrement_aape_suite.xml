@@ -7,21 +7,30 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:clipToPadding="false"
+        android:fillViewport="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
 
         <TextView
-            android:text="Diametre ( Nord-Sud en m):"
+            android:text="Rayon( Nord en m):"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView18"
             android:layout_alignRight="@+id/textView18"
             android:layout_alignEnd="@+id/textView18"
             android:layout_marginTop="30dp"
-            android:id="@+id/textView25" />
+            android:id="@+id/textView25"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:text="Hauteur (en m):"
@@ -33,17 +42,19 @@
             android:id="@+id/textView18"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:textStyle="normal|bold" />
 
         <TextView
-            android:text="Diametre ( Est-Ouest en m):"
+            android:text="Rayon ( Est en m):"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView25"
             android:layout_alignRight="@+id/textView25"
             android:layout_alignEnd="@+id/textView25"
             android:layout_marginTop="34dp"
-            android:id="@+id/textView26" />
+            android:id="@+id/textView26"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:text="Couronne Taillee :"
@@ -53,49 +64,8 @@
             android:layout_alignRight="@+id/textView26"
             android:layout_alignEnd="@+id/textView26"
             android:layout_marginTop="35dp"
-            android:id="@+id/textView27" />
-
-        <TextView
-            android:text="Arbre Ratatine:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView27"
-            android:layout_alignRight="@+id/textView27"
-            android:layout_alignEnd="@+id/textView27"
-            android:layout_marginTop="41dp"
-            android:id="@+id/textView28" />
-
-        <TextView
-            android:text="Couronne Compacte:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView28"
-            android:layout_alignRight="@+id/textView28"
-            android:layout_alignEnd="@+id/textView28"
-            android:layout_marginTop="33dp"
-            android:id="@+id/textView29" />
-
-        <TextView
-            android:text="Ecartement Des Pieds (en m):"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView29"
-            android:layout_alignRight="@+id/textView29"
-            android:layout_alignEnd="@+id/textView29"
-            android:layout_marginTop="38dp"
-            android:id="@+id/textView32" />
-
-        <TextView
-            android:text="Observations De L'Agent:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView32"
-            android:layout_alignRight="@+id/textView32"
-            android:layout_alignEnd="@+id/textView32"
-            android:layout_marginRight="14dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginTop="40dp"
-            android:id="@+id/textView33" />
+            android:id="@+id/textView27"
+            android:textStyle="normal|bold" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -133,68 +103,232 @@
             android:layout_alignEnd="@+id/editText9"
             android:id="@+id/editText14" />
 
-        <Switch
+        <TextView
+            android:text="Arbre Ratatine:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/switch2"
-            android:layout_alignBaseline="@+id/textView27"
-            android:layout_alignBottom="@+id/textView27"
-            android:layout_alignLeft="@+id/editText14"
-            android:layout_alignStart="@+id/editText14"
-            android:layout_marginLeft="47dp"
-            android:layout_marginStart="47dp" />
+            android:layout_marginTop="35dp"
+            android:id="@+id/textView28"
+            android:textStyle="normal|bold"
+            android:layout_below="@+id/textView27"
+            android:layout_alignLeft="@+id/textView18"
+            android:layout_alignStart="@+id/textView18" />
 
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/switch4"
-            android:layout_alignTop="@+id/textView28"
-            android:layout_alignLeft="@+id/switch2"
-            android:layout_alignStart="@+id/switch2" />
-
-        <Switch
+        <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/switch5"
-            android:layout_alignTop="@+id/textView29"
-            android:layout_alignLeft="@+id/switch4"
-            android:layout_alignStart="@+id/switch4" />
+            android:entries="@array/attributarbre"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_alignBottom="@+id/textView29"
+            android:layout_toRightOf="@+id/textView29"
+            android:layout_toEndOf="@+id/textView29" />
+
+        <TextView
+            android:text="Rayon (Sud En m):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_alignBaseline="@+id/textView25"
+            android:layout_alignBottom="@+id/textView25"
+            android:layout_alignLeft="@+id/textView29"
+            android:layout_alignStart="@+id/textView29"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:textStyle="normal|bold" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:layout_below="@+id/switch5"
-            android:layout_alignRight="@+id/editText14"
-            android:layout_alignEnd="@+id/editText14"
-            android:layout_marginTop="12dp"
-            android:id="@+id/editText15" />
+            android:id="@+id/editText22"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignLeft="@+id/switch5"
+            android:layout_alignStart="@+id/switch5" />
+
+        <TextView
+            android:text="Rayon (Ouest en m):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText14"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:id="@+id/textView4"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_above="@+id/textView27"
+            android:layout_alignLeft="@+id/editText22"
+            android:layout_alignStart="@+id/editText22"
+            android:id="@+id/editText23" />
+
+        <TextView
+            android:text="Ecartement Du Pied Le Plus Proche (en m):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:id="@+id/textView32"
+            android:textStyle="normal|bold"
+            android:layout_below="@+id/textView28"
+            android:layout_alignLeft="@+id/textView28"
+            android:layout_alignStart="@+id/textView28"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/switch4"
+            android:entries="@array/attributarbre"
+            android:layout_alignBottom="@+id/textView28"
+            android:layout_alignLeft="@+id/editText16"
+            android:layout_alignStart="@+id/editText16" />
+
+        <Switch
+            android:textOn="Oui"
+            android:textOff="Non"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch2"
+            android:layout_alignTop="@+id/textView27"
+            android:layout_alignLeft="@+id/switch4"
+            android:layout_alignStart="@+id/switch4" />
+
+        <TextView
+            android:text="Couronne Compacte:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView29"
+            android:textStyle="normal|bold"
+            android:layout_marginLeft="92dp"
+            android:layout_marginStart="92dp"
+            android:layout_alignBottom="@+id/switch4"
+            android:layout_toRightOf="@+id/editText16"
+            android:layout_toEndOf="@+id/editText16" />
+
+        <TextView
+            android:text="Couronne Etalee:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView27"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_alignEnd="@+id/textView4"
+            android:id="@+id/textView45"
+            android:textStyle="normal|bold" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView45"
+            android:id="@+id/spinner7"
+            android:layout_alignLeft="@+id/switch5"
+            android:layout_alignStart="@+id/switch5"
+            android:layout_alignRight="@+id/switch5"
+            android:layout_alignEnd="@+id/switch5"
+            android:entries="@array/attributarbre" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
             android:ems="10"
+            android:id="@+id/editText16"
+            android:layout_alignBottom="@+id/textView33"
+            android:layout_alignLeft="@+id/editText14"
+            android:layout_alignStart="@+id/editText14" />
+
+        <TextView
+            android:text="Diametre De La Couronne (Nord-Sud):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView55"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/textView32"
+            android:layout_alignLeft="@+id/textView33"
+            android:layout_alignStart="@+id/textView33" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText26"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_alignBottom="@+id/textView55"
+            android:layout_toRightOf="@+id/textView55"
+            android:layout_toEndOf="@+id/textView55" />
+
+        <TextView
+            android:text="Observations De L'Agent:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView33"
+            android:textStyle="normal|bold"
+            android:layout_below="@+id/textView60"
+            android:layout_alignRight="@+id/textView28"
+            android:layout_alignEnd="@+id/textView28"
+            android:layout_marginTop="21dp" />
+
+        <TextView
+            android:text="Diametre De La Couronne (Est-Ouest):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView60"
+            android:textStyle="normal|bold"
+            android:layout_alignBottom="@+id/editText26"
+            android:layout_toRightOf="@+id/editText26"
+            android:layout_toEndOf="@+id/editText26"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText27"
             android:layout_below="@+id/editText15"
-            android:layout_alignLeft="@+id/editText15"
-            android:layout_alignStart="@+id/editText15"
-            android:layout_marginTop="15dp"
-            android:id="@+id/editText16" />
+            android:layout_toRightOf="@+id/textView60"
+            android:layout_toEndOf="@+id/textView60"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText15"
+            android:layout_above="@+id/editText26"
+            android:layout_toRightOf="@+id/editText16"
+            android:layout_toEndOf="@+id/editText16" />
 
         <Button
             android:text="ENREGISTRER"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/enregistreraape"
+            android:elevation="0dp"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:minWidth="151dp"
             android:layout_below="@+id/editText16"
-            android:layout_alignLeft="@+id/editText16"
-            android:layout_alignStart="@+id/editText16"
-            android:layout_marginLeft="34dp"
-            android:layout_marginStart="34dp"
-            android:layout_marginTop="30dp"
-            android:id="@+id/button4" />
+            android:layout_alignLeft="@+id/switch5"
+            android:layout_alignStart="@+id/switch5"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="68dp" />
 
     </RelativeLayout>
+    </ScrollView>
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"

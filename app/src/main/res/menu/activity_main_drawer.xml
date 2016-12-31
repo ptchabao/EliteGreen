@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/enregistrement_producteur"
+        android:icon="@android:drawable/btn_plus"
+        android:title="Enregistrer Un Producteur" />
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/enregistrement_aape"
             android:icon="@android:drawable/ic_menu_add"
             android:title="Enregistrer Un AAPE" />
         <item
-            android:id="@+id/enregistrement_producteur"
-            android:icon="@android:drawable/btn_plus"
-            android:title="Enregistrer Un Producteur" />
-        <item
             android:id="@+id/planvisites"
             android:icon="@android:drawable/ic_menu_agenda"
             android:title="Planing Des Visites" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@android:drawable/ic_dialog_map"
-            android:title="Carte" />
-        <item
             android:id="@+id/visites"
             android:icon="@android:drawable/ic_menu_my_calendar"
-            android:title="Visites" />
+            android:title="Visites De Collecte De Donnees" />
+        <item
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="Geolocalisation"
+            android:id="@+id/menumap" />
     </group>
 
     <item android:title="Infos">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/aide"
                 android:icon="@android:drawable/ic_menu_help"
                 android:title="Aide" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/apropos"
                 android:icon="@android:drawable/ic_dialog_info"
                 android:title="A Propos" />
         </menu>
